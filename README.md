@@ -8,7 +8,7 @@ git clone git@github.com:akaoj/vim-config.git .vim/
 cd .vim/
 git submodule init
 git submodule update
-mkdir backups undos
+mkdir .swap .undos
 cd ~
 ln -s .vim/vimrc .vimrc
 ```

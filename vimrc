@@ -28,12 +28,12 @@ set incsearch   " Highlight found words while typing
 set ignorecase
 set smartcase   " Both lines will make Vim search case sensitive only if one of the character is in upper case
 
-" Create backup files inside user's home (safer)
-set backup
-set directory=~/.vim/backups/
+" Do not create backup (use Git for fuck's sake!) but store swap files inside user's home (safer)
+set nobackup
+set directory=~/.vim/.swap//
 
 " Save undo file so we can undo changes to a file even if we close it
-set undodir=~/.vim/undos/ undofile
+set undodir=~/.vim/.undos// undofile
 
 " Tabs
 set shiftwidth=4      " Make a tabulation 4 spaces wide when displayed
