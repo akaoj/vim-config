@@ -36,9 +36,10 @@ set directory=~/.vim/.swap//
 set undodir=~/.vim/.undos// undofile
 
 " Tabs
-set shiftwidth=4      " Make a tabulation 4 spaces wide when displayed
-set textwidth=0       " Disable line wrapping
-set noexpandtab       " Do not replace tabs with spaces
+set shiftwidth=4  " Make an indent correspond to 4 spaces
+set textwidth=0   " Disable line wrapping
+set noexpandtab   " Do not replace tabs with spaces
+set tabstop=4     " Display a tab as 4 spaces wide
 
 " Change the default text on folded pieces of code (display the line under the opening bracket instead of the bracket)
 function! ValFoldText()
