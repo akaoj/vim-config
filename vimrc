@@ -41,6 +41,8 @@ set textwidth=0   " Disable line wrapping
 set noexpandtab   " Do not replace tabs with spaces
 set tabstop=4     " Display a tab as 4 spaces wide
 
+autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2
+
 " Change the default text on folded pieces of code (display the line under the opening bracket instead of the bracket)
 function! ValFoldText()
 	let n1 = v:foldend - v:foldstart + 1
